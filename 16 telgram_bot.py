@@ -11,7 +11,9 @@ def komands_start(message):
 def komands_pass(message):
     bot.send_message(message.chat.id,'сгенерирую пароль')
     parol=randint(1000,9999)
-   bot.send_message(message.chat.id,str(parol))
+    bot.send_message(message.chat.id,str(parol))
+
+
 
 
 @bot.message_handler(content_types=['text'])
