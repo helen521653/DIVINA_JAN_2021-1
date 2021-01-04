@@ -10,7 +10,7 @@ def komands_start(message):
 @bot.message_handler(commands=['pass'])
 def komands_pass(message):
     bot.send_message(message.chat.id,'сгенерирую пароль')
-    parol=randint(1000,9999)
+    parol=randint(1001,9999)
     bot.send_message(message.chat.id,str(parol))
 
 
@@ -22,6 +22,6 @@ def otvet_na_text(message):
     bot.send_message(message.chat.id, message.text[::-1])
 
 bot.polling() #Забираем сообщения у бота
-#Hel
+#He
 
 
