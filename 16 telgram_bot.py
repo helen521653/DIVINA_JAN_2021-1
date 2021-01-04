@@ -20,6 +20,6 @@ def otvet_na_text(message):
     bot.send_message(message.chat.id, message.text[::-1])
 
 bot.polling() #Забираем сообщения у бота
-
+#Hel
 
 
