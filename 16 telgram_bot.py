@@ -1,5 +1,5 @@
 import telebot
-from myToken import TOKEN
+from myToken1 import TOKEN
 
 
 bot = telebot.TeleBot(TOKEN)  #Создаём подключение к боту
@@ -8,9 +8,6 @@ bot = telebot.TeleBot(TOKEN)  #Создаём подключение к боту
 def otvet_na_text(message):
     print(message)
     bot.send_message(message.chat.id, message.text[::-1])
-
-
-
 
 bot.polling() #Забираем сообщения у бота
 
