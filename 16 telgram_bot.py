@@ -12,12 +12,10 @@ def komands_pass(message):
     parol = randint(1000,9999)
     bot.send_message(message.chat.id, str(parol) )
 
-bot.polling() #Забираем сообщения у бота
-#He
-
 @bot.message_handler(content_types=['text'])
 def otvet_na_text(message):
     print(message)
     bot.send_message(message.chat.id, message.text[::-1])
-    #bot.send_message(message.chat.id, "Hello")
-
+#bot.send_message(message.chat.id, "Hello")
+bot.polling() #Забираем сообщения у бота
+#Hel
